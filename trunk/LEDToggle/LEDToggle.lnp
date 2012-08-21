@@ -1,0 +1,4 @@
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "misc.o" "stm32f10x_gpio.o" "stm32f10x_rcc.o" "core_cm3.o" "system_stm32f10x.o" --strict --scatter "LEDToggle.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LEDToggle.map" -o LEDToggle.axf
