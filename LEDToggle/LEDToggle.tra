@@ -1,0 +1,25 @@
+*** Creating Trace Output File 'LEDToggle.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_stm32f10x_cl.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"misc.o"'
+### List of Objects: adding '"stm32f10x_gpio.o"'
+### List of Objects: adding '"stm32f10x_rcc.o"'
+### List of Objects: adding '"core_cm3.o"'
+### List of Objects: adding '"system_stm32f10x.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "misc.o" "stm32f10x_gpio.o" "stm32f10x_rcc.o" "core_cm3.o" "system_stm32f10x.o" --strict --scatter "LEDToggle.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LEDToggle.map" -o LEDToggle.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'LEDToggle.axf'
+### ADS-LD Command File: 'LEDToggle.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'LEDToggle.lnp', Handle=0x000004BC
+### Writing '.lnp' file
+### ADS-LD Command file 'LEDToggle.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
