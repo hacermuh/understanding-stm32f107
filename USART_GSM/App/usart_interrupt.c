@@ -51,6 +51,7 @@ uint16_t Data;
   * @retval None
   */
 
+
 #if 0
 void USART1_IRQHandler(void)
 {
@@ -65,35 +66,24 @@ void USART1_IRQHandler(void)
       USART_ITConfig(USART1, USART_IT_RXNE, DISABLE);
     }
   }
-#if 0	
-	if(USART_GetITStatus(USART1, USART_IT_TXE) != RESET)
-  {   
-    /* Write one byte to the transmit data register */
-    USART_SendData(USART1, TxBuffer[TxCounter++]);
 
-    if(TxCounter == NbrOfDataToTransfer)
-    {
-      /* Disable the EVAL_COM1 Transmit interrupt */
-      USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
-    }
-  }
-#endif
+
+
 }
 #endif
-
-#if 1
-void USART1_IRQHandler(void)
+void USART1_IRQHandler(void) //USART1_IRQHandler
 {
 
-  if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET); // Wait for Char
+  if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET) // Wait for Char
   {
-    Data = USART_ReceiveData(USART1); // Collect Char
+    Data = (USART_ReceiveData(USART1)  & 0x7F ); // Collect Char
     rxBuffer[rxWriteIndex] = Data;
     if (++rxWriteIndex == rxBufferSize) rxWriteIndex = 0;
    if (++rxCounter == rxBufferSize)
       {
       rxCounter = 0;
       rxBufferOverflow = 1;
+			
       }
     USART_ClearITPendingBit(USART1,USART_IT_RXNE);
   }
@@ -111,4 +101,5 @@ uint16_t USART_GetChar(void)
   --rxCounter;
   return data;
 }
-#endif
+
+
