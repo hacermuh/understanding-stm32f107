@@ -414,6 +414,13 @@
         </Group>
         <Group>
           <GroupName>Drivers</GroupName>
+          <Files>
+            <File>
+              <FileName>gsm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drivers\gsm.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>Libraries</GroupName>

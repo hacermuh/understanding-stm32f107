@@ -17,8 +17,8 @@
 ***********************************************************************/
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __usart_interrupt_H
-#define __usart_interrupt_H
+#ifndef __USART_INTERRUPT_H
+#define __USART_INTERRUPT_H
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"

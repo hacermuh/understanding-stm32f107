@@ -3,23 +3,107 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\usart_gsm.uvproj
-Project File Date:  08/22/2012
+D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\usart_gsm.uvproj
+Project File Date:  08/23/2012
 
 <h2>Output:</h2>
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'USART_GSM'
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(145): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=4140 RO-data=368 RW-data=152 ZI-data=1680  
+Program Size: Code=4044 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(146): warning:  #1-D: last line of file ends without a newline
+compiling usart_interrupt.c...
+linking...
+Program Size: Code=4148 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 1 Warning(s).
 Rebuild target 'USART_GSM'
 assembling startup_stm32f10x_cl.s...
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(146): warning:  #1-D: last line of file ends without a newline
 compiling usart_interrupt.c...
-App\usart_interrupt.c(112): warning:  #1-D: last line of file ends without a newline
 compiling gsm.c...
 compiling misc.c...
 compiling stm32f10x_gpio.c...
@@ -28,29 +112,53 @@ compiling stm32f10x_usart.c...
 compiling system_stm32f10x.c...
 compiling core_cm3.c...
 linking...
-Program Size: Code=4140 RO-data=368 RW-data=152 ZI-data=1680  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4140 RO-data=368 RW-data=152 ZI-data=1680  
+Program Size: Code=4148 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4140 RO-data=368 RW-data=152 ZI-data=1680  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
 Rebuild target 'USART_GSM'
 assembling startup_stm32f10x_cl.s...
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(141): warning:  #1-D: last line of file ends without a newline
 compiling usart_interrupt.c...
-App\usart_interrupt.c(112): warning:  #1-D: last line of file ends without a newline
 compiling gsm.c...
 compiling misc.c...
 compiling stm32f10x_gpio.c...
@@ -59,146 +167,687 @@ compiling stm32f10x_usart.c...
 compiling system_stm32f10x.c...
 compiling core_cm3.c...
 linking...
-Program Size: Code=4140 RO-data=368 RW-data=152 ZI-data=1680  
+Program Size: Code=4136 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling system_stm32f10x.c...
-compiling core_cm3.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
 Build target 'USART_GSM'
-compiling system_stm32f10x_cl.c...
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(142): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=4728 RO-data=368 RW-data=40 ZI-data=1632  
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling usart_interrupt.c...
+linking...
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 0 Warning(s).
 Rebuild target 'USART_GSM'
 assembling startup_stm32f10x_cl.s...
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(142): warning:  #1-D: last line of file ends without a newline
 compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
 compiling gsm.c...
 compiling misc.c...
 compiling stm32f10x_gpio.c...
 compiling stm32f10x_rcc.c...
 compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
 compiling core_cm3.c...
-compiling system_stm32f10x_cl.c...
 linking...
-Program Size: Code=4728 RO-data=368 RW-data=40 ZI-data=1632  
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Build target 'USART_GSM'
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'USART_GSM'
+assembling startup_stm32f10x_cl.s...
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(142): warning:  #1-D: last line of file ends without a newline
+compiling usart_interrupt.c...
+compiling gsm.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
 linking...
-usart_gsm.axf: Error: L6218E: Undefined symbol SystemInit (referred from startup_stm32f10x_cl.o).
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(143): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling usart_interrupt.c...
+linking...
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Rebuild target 'USART_GSM'
+assembling startup_stm32f10x_cl.s...
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(143): warning:  #1-D: last line of file ends without a newline
+compiling usart_interrupt.c...
+compiling gsm.c...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+linking...
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(143): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4152 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(44): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4144 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(44): warning:  #550-D: variable "ReData" was set but never used
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4148 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4156 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(160): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4208 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(151): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4156 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=4156 RO-data=368 RW-data=152 ZI-data=1680  
+FromELF: creating hex file...
+"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
+* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.50j, compiled Jun 26 2012 09:19:07
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 11111117 
+Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
+ 
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+ 
+Target info:
+------------
+Device: STM32F107VC
+VTarget = 3.229V
+State of Pins: 
+TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'USART_GSM'
+compiling main.c...
+App\main.c(92): error:  #29: expected an expression
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
 Target not created
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-linking...
-usart_gsm.axf: Error: L6218E: Undefined symbol SystemInit (referred from startup_stm32f10x_cl.o).
-Target not created
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
 Build target 'USART_GSM'
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(148): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=3972 RO-data=368 RW-data=40 ZI-data=1632  
+Program Size: Code=4156 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3972 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3968 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
 * JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
  
 JLink info:
 ------------
@@ -223,7 +872,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F107VC
-VTarget = 3.274V
+VTarget = 3.229V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -234,26 +883,15 @@ JTAG speed: 2000 kHz
 Erase Done.
 Programming Done.
 Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+Build target 'USART_GSM'
 compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
 linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
+Program Size: Code=4160 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
+"usart_gsm.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
 * JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
  
 JLink info:
 ------------
@@ -278,172 +916,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
+VTarget = 3.229V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6
@@ -456,14 +929,14 @@ Programming Done.
 Verify OK.
 Build target 'USART_GSM'
 compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
+App\main.c(149): warning:  #1-D: last line of file ends without a newline
 linking...
-Program Size: Code=3964 RO-data=368 RW-data=40 ZI-data=1632  
+Program Size: Code=4168 RO-data=368 RW-data=152 ZI-data=1680  
 FromELF: creating hex file...
 "usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
+Load "D:\\VBEB\\Project\\Understanding_STM32F107\\trunk\\USART_GSM\\usart_gsm.AXF" 
 * JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
+Set JLink Project File to "D:\VBEB\Project\Understanding_STM32F107\trunk\USART_GSM\JLinkSettings.ini"
  
 JLink info:
 ------------
@@ -488,1242 +961,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x_cl.c...
-linking...
-Program Size: Code=4728 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4728 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4720 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4728 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4720 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3956 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(74): error:  #20: identifier "USARTy_GPIO" is undefined
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-Target not created
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3984 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3976 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3976 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3976 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3988 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3996 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3996 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3996 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3996 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3988 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=3996 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4452 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4444 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4548 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=3980 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4444 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4444 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.267V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4452 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.267V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Build target 'USART_GSM'
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-linking...
-Program Size: Code=4428 RO-data=368 RW-data=40 ZI-data=1632  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 1 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4512 RO-data=368 RW-data=152 ZI-data=1680  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.274V
-State of Pins: 
-TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 8192
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Erase Done.
-Programming Done.
-Verify OK.
-Rebuild target 'USART_GSM'
-assembling startup_stm32f10x_cl.s...
-compiling main.c...
-App\main.c(40): warning:  #177-D: variable "ReData" was declared but never referenced
-compiling usart_interrupt.c...
-App\usart_interrupt.c(114): warning:  #1-D: last line of file ends without a newline
-compiling gsm.c...
-compiling misc.c...
-compiling stm32f10x_gpio.c...
-compiling stm32f10x_rcc.c...
-compiling stm32f10x_usart.c...
-compiling core_cm3.c...
-compiling system_stm32f10x.c...
-linking...
-Program Size: Code=4604 RO-data=368 RW-data=152 ZI-data=1680  
-FromELF: creating hex file...
-"usart_gsm.axf" - 0 Error(s), 2 Warning(s).
-Load "C:\\Users\\mui-pc\\Desktop\\VBEB\\VBEBProject\\USART_GSM\\usart_gsm.AXF" 
-* JLink Info: Device "STM32F107VC" selected (256 KB flash, 20 KB RAM).
-Set JLink Project File to "C:\Users\mui-pc\Desktop\VBEB\VBEBProject\USART_GSM\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.50j, compiled Jun 26 2012 09:19:07
-Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
-Hardware: V7.00
-S/N : 11111117 
-Feature(s) : RDI, FlashBP, FlashDL, JFlash, GDBFull 
- 
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: TotalIRLen = 9, IRPrint = 0x0011
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
- 
-Target info:
-------------
-Device: STM32F107VC
-VTarget = 3.267V
+VTarget = 3.229V
 State of Pins: 
 TCK: 1, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
 Hardware-Breakpoints: 6

@@ -1,4 +1,4 @@
---cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "usart_interrupt.o" "gsm.o" "misc.o" "stm32f10x_gpio.o" "stm32f10x_rcc.o" "stm32f10x_usart.o" "core_cm3.o" "system_stm32f10x.o" --strict --scatter "usart_gsm.sct" 
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "usart_interrupt.o" "gsm.o" "misc.o" "stm32f10x_gpio.o" "stm32f10x_rcc.o" "stm32f10x_usart.o" "system_stm32f10x.o" "core_cm3.o" --strict --scatter "usart_gsm.sct" 
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\usart_gsm.map" -o usart_gsm.axf
