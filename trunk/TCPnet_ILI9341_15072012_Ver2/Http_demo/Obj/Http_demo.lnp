@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\obj\http_demo.o" ".\obj\net_config.o" ".\obj\startup_stm32f10x_cl.o" C:\Keil\ARM\RV31\LIB\TCP_CM3.lib ".\obj\eth_stm32x.o" ".\obj\system_stm32f10x_cl.o" ".\obj\glcd.o" --library_type=microlib --strict --scatter ".\Obj\Http_demo.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Http_demo.map" -o .\Obj\Http_demo.axf

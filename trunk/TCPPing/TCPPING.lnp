@@ -1,0 +1,4 @@
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "eth_stm32x.o" "net_config.o" "system_stm32f10x.o" C:\Keil\ARM\RV31\LIB\TCP_ARM_L.lib --strict --scatter "TCPPING.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\TCPPING.map" -o TCPPING.axf

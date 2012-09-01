@@ -1,0 +1,24 @@
+*** Creating Trace Output File 'TCPPING.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_stm32f10x_cl.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"eth_stm32x.o"'
+### List of Objects: adding '"net_config.o"'
+### List of Objects: adding '"system_stm32f10x.o"'
+### List of Objects: adding '"C:\Keil\ARM\RV31\LIB\TCP_ARM_L.lib"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "startup_stm32f10x_cl.o" "main.o" "eth_stm32x.o" "net_config.o" "system_stm32f10x.o" C:\Keil\ARM\RV31\LIB\TCP_ARM_L.lib --strict --scatter "TCPPING.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\TCPPING.map" -o TCPPING.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'TCPPING.axf'
+### ADS-LD Command File: 'TCPPING.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'TCPPING.lnp', Handle=0x0000069C
+### Writing '.lnp' file
+### ADS-LD Command file 'TCPPING.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 290 errors
+### Updating obj list
+### LDADS_file() completed.
