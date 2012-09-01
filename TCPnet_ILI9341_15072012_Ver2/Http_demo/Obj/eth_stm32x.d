@@ -1,0 +1,11 @@
+.\Obj\eth_stm32x.o: ..\Library\ETH_STM32x.c
+.\Obj\eth_stm32x.o: C:\Keil\ARM\RV31\Inc\Net_Config.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\RV31\Inc\RTL.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\Inc\ST\STM32F10x\stm32f10x_cl.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+.\Obj\eth_stm32x.o: C:\Keil\ARM\Inc\ST\STM32F10x\system_stm32f10x_cl.h
+.\Obj\eth_stm32x.o: ..\Library\ETH_STM32x.h
+.\Obj\eth_stm32x.o: ..\Library\GLCD.h
