@@ -26,18 +26,18 @@ BOOL wait_ack;
 U8   lcd_text[2][16+1] = {" ",                /* Buffer for LCD text         */
                           "Waiting for DHCP"};
 
-char *data_buf = "HELLO";
+//char *data_buf = "HELLO";
 char *data1_buf = "Hello The World!!";
-static U8 rem_IP[4] = {192,168,1,11};
+static U8 rem_IP[4] = {192,168,1,18};
 extern LOCALM localm[];                       /* Local Machine Settings      */
 #define MY_IP localm[NETIF_ETH].IpAdr
 #define DHCP_TOUT   50                        /* DHCP timeout 5 seconds      */
-
+#define msgLength 5
 extern uint16_t ASCII_Table[];
 
 static void init_io (void);
 static void init_display (void);
- void send_data (void); 
+ void send_data (U8 *data_buf, U8 data_length); 
 BOOL send_datalog ();
 U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par);
 /*--------------------------- init ------------------------------------------*/
@@ -136,7 +136,8 @@ int fputc (int ch, FILE *f)  {
 
 /*--------------------------- LED_out ---------------------------------------*/
 
-void LED_out (U32 val) {
+void LED_out (U32 val) 
+{
   U32 rv;
 
   rv = 0;
@@ -155,7 +156,8 @@ void LED_out (U32 val) {
 
 /*--------------------------- AD_in -----------------------------------------*/
 
-U16 AD_in (U32 ch) {
+U16 AD_in (U32 ch) 
+{
   /* Read ARM Analog Input */
   U32 val = 0;
 
@@ -168,19 +170,21 @@ U16 AD_in (U32 ch) {
 
 /*--------------------------- get_button ------------------------------------*/
 
-U8 get_button (void) {
+U8 get_button (void) 
+{
   /* Read ARM Digital Input */
   U32 val = 0;
 
   if ((GPIOB->IDR & (1 << 9)) == 0) {
     /* Key button */
-    val |= 0x01;
-		soc_state = 0;
-		send_data ();
+    //val |= 0x01;
+		val =1;
+		
   }
   if ((GPIOC->IDR & (1 << 13)) == 0) {
     /* Wakeup button */
-    val |= 0x02;
+    //val |= 0x02;
+		val =2; 
   }
   return (val);
 }
@@ -202,7 +206,8 @@ static void upd_display () {
 
 /*--------------------------- init_display ----------------------------------*/
 
-static void init_display () {
+static void init_display () 
+{
   /* LCD Module init */
 
   GLCD_init();
@@ -223,7 +228,8 @@ static void init_display () {
 
 /*--------------------------- dhcp_check ------------------------------------*/
 
-static void dhcp_check () {
+static void dhcp_check () 
+{
   /* Monitor DHCP IP address assignment. */
 
   if (tick == __FALSE || dhcp_tout == 0) {
@@ -259,7 +265,8 @@ static void dhcp_check () {
 
 /*--------------------------- blink_led -------------------------------------*/
 
-static void blink_led () {
+static void blink_led () 
+{
   /* Blink the LEDs on an eval board */
   const U8 led_val[8] = { 0x01,0x03,0x07,0x0F,0x0E,0x0C,0x08,0x00 };
   static U32 cnt;
@@ -281,28 +288,37 @@ static void blink_led () {
 
 /*---------------------------------------------------------------------------*/
 
-int main (void) {
+int main (void) 
+{
   /* Main Thread of the TcpNet */
-
+	int i=1;
+	U32 buttonget;
   init ();
 	
  // printf ("Program started\n");
   //LEDrun = __TRUE;
   ///dhcp_tout = DHCP_TOUT;
-//socket_tcp = tcp_get_socket (TCP_TYPE_CLIENT, 0, 10, tcp_callback); 
+
   tcp_soc = tcp_get_socket (TCP_TYPE_CLIENT, 0, 120, tcp_callback);
   soc_state = 0;
 	//tcp_connect (tcp_soc, rem_IP, 2020, 0);
 	//send_datalog ();
-	while (1) {
-    timer_poll ();
-    main_TcpNet ();
-    send_data ();
-		//send_datalog ();
-		//get_button();
-  }
+	//send_data ();
+	while (1) 
+		{
+			timer_poll ();
+			main_TcpNet ();
+			buttonget = get_button();
+			if ( buttonget == 2)
+			{
+				
+			  send_data ("SANG",4);
+			}
+	  }
 }
-void send_data (void) {
+
+void send_data (U8 *data_buf, U8 data_length) 
+{
   
   static int bcount;
 	//int i;
@@ -311,7 +327,7 @@ void send_data (void) {
 
   switch (soc_state) {
     case 0:
-      tcp_connect (tcp_soc, rem_IP, 2017, 0);
+      tcp_connect (tcp_soc, rem_IP, 2020, 0);
       bcount    = 0;
       wait_ack  = __FALSE;
       soc_state = 1;
@@ -326,8 +342,8 @@ void send_data (void) {
 			
 			if (tcp_check_send (tcp_soc))
 				{
-      max = tcp_max_dsize (tcp_soc);
-      sendbuf = tcp_get_buf (max);
+      //max = tcp_max_dsize (tcp_soc);
+      sendbuf = tcp_get_buf (data_length);
       
 			/*for (i = 0; i < max; i += 2) {
         sendbuf[i]   = bcount >> 8;
@@ -337,9 +353,9 @@ void send_data (void) {
           break;
         }
       }*/
-			memcpy (sendbuf, data_buf, max);
-      tcp_send (tcp_soc, sendbuf, max);
-			tcp_send (tcp_soc, sendbuf, max);
+			memcpy (sendbuf, data_buf, data_length);
+      tcp_send (tcp_soc, sendbuf, data_length);
+			//tcp_send (tcp_soc, sendbuf, max);
 			GLCD_clearLn (Line8);
 			GLCD_displayStringLn(Line8, "Message Sent");
       wait_ack = __TRUE;
@@ -354,7 +370,8 @@ void send_data (void) {
       return;
   }
 }
-U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par) {
+U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par) 
+{
   /* This function is called on TCP event */
 	U8 data_get;
   switch (event) {
@@ -378,7 +395,8 @@ U16 tcp_callback (U8 soc, U8 event, U8 *ptr, U16 par) {
   return (0);
 }
 			
-BOOL send_datalog () {
+BOOL send_datalog () 
+{
   U8 *sendbuf;
   U16 maxlen;
 

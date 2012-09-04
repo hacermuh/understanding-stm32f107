@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\Http_demo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\Http_demo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Sat Sep 01 11:47:54 2012
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Tue Sep 04 16:26:40 2012
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -106,7 +106,7 @@ Function Pointers
  <LI><a href="#[4a]">fputc</a> from http_demo.o(.text) referenced from printf5.o(i.__0printf$5)
  <LI><a href="#[48]">main</a> from http_demo.o(.text) referenced from entry8.o(.ARM.Collect$$$$00000009)
  <LI><a href="#[4b]">nbns_listener</a> from at_nbns.o(i.nbns_listener) referenced from at_nbns.o(i.nbns_init)
- <LI><a href="#[5c]">tcp_callback</a> from http_demo.o(.text) referenced from http_demo.o(.text)
+ <LI><a href="#[5a]">tcp_callback</a> from http_demo.o(.text) referenced from http_demo.o(.text)
 </UL>
 <P>
 <H3>
@@ -136,46 +136,45 @@ Global Symbols
 
 <P><STRONG><a name="[cf]"></a>AD_in</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, http_demo.o(.text), UNUSED)
 
-<P><STRONG><a name="[50]"></a>send_data</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, http_demo.o(.text))
+<P><STRONG><a name="[5e]"></a>get_button</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, http_demo.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[50]"></a>send_data</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, http_demo.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 224<LI>Call Chain = send_data &rArr; tcp_send &rArr; tcp_send_frame &rArr; ip_send_frame &rArr; eth_send_frame &rArr; arp_cache_find &rArr; arp_send_request &rArr; free_mem
 </UL>
-<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_max_dsize
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_check_send
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_displayStringLn
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_clearLn
 </UL>
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_button
 </UL>
 
-<P><STRONG><a name="[5a]"></a>get_button</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, http_demo.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
-</UL>
-
-<P><STRONG><a name="[5c]"></a>tcp_callback</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, http_demo.o(.text))
+<P><STRONG><a name="[5a]"></a>tcp_callback</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, http_demo.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> http_demo.o(.text)
 </UL>
-<P><STRONG><a name="[48]"></a>main</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, http_demo.o(.text))
+<P><STRONG><a name="[48]"></a>main</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, http_demo.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main &rArr; main_TcpNet &rArr; run_system &rArr; eth_run_link &rArr; tcp_process &rArr; tcp_send_reset &rArr; tcp_send_ctrl &rArr; tcp_send_frame &rArr; ip_send_frame &rArr; eth_send_frame &rArr; arp_cache_find &rArr; arp_send_request &rArr; free_mem
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_tick
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_socket
-<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_TcpNet
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_tick
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_socket
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_TcpNet
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_button
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry8.o(.ARM.Collect$$$$00000009)
 </UL>
-<P><STRONG><a name="[60]"></a>send_datalog</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, http_demo.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
-<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_max_dsize
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
+<P><STRONG><a name="[5f]"></a>send_datalog</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, http_demo.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_max_dsize
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_check_send
 </UL>
 
@@ -188,7 +187,7 @@ Global Symbols
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_mem
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_mem
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_error
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_socket
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_socket
 </UL>
 
 <P><STRONG><a name="[68]"></a>init_system</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, net_config.o(.text))
@@ -213,7 +212,7 @@ Global Symbols
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;icmp_run_engine
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eth_run_link
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_TcpNet
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_TcpNet
 </UL>
 
 <P><STRONG><a name="[b0]"></a>igmp_is_member</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, net_config.o(.text))
@@ -541,7 +540,7 @@ Global Symbols
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wr_dat
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[84]"></a>GLCD_SetCursor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, glcd.o(.text), UNUSED)
@@ -556,11 +555,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[64]"></a>GLCD_setTextColor</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, glcd.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[63]"></a>GLCD_setBackColor</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, glcd.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[62]"></a>GLCD_clear</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, glcd.o(.text))
@@ -569,7 +568,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ili9341_set_window
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wr_dat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[86]"></a>GLCD_drawChar</STRONG> (Thumb, 76 bytes, Stack size 24 bytes, glcd.o(.text))
@@ -597,7 +596,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_ethernet
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GLCD_clearLn
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[52]"></a>GLCD_clearLn</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, glcd.o(.text))
@@ -614,11 +613,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ili9341_set_window
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wr_dat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
-<P><STRONG><a name="[57]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
+<P><STRONG><a name="[56]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
 </UL>
 
@@ -735,8 +734,8 @@ Global Symbols
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_request
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_reply
 <LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ETH_IRQHandler
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_get_buf
 </UL>
 
 <P><STRONG><a name="[92]"></a>arp_cache_add</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, at_arp.o(i.arp_cache_add))
@@ -909,7 +908,7 @@ Global Symbols
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_reply
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ip_run_local
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eth_run_link
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
 </UL>
 
 <P><STRONG><a name="[c2]"></a>get_rnd32</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, at_system.o(i.get_rnd32))
@@ -956,7 +955,7 @@ Global Symbols
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_copy
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_system
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
 <P><STRONG><a name="[af]"></a>init_mem</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, at_mem.o(i.init_mem))
@@ -1031,7 +1030,7 @@ Global Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_cache_add
 </UL>
 
-<P><STRONG><a name="[5f]"></a>main_TcpNet</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, at_system.o(i.main_TcpNet))
+<P><STRONG><a name="[5d]"></a>main_TcpNet</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, at_system.o(i.main_TcpNet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main_TcpNet &rArr; run_system &rArr; eth_run_link &rArr; tcp_process &rArr; tcp_send_reset &rArr; tcp_send_ctrl &rArr; tcp_send_frame &rArr; ip_send_frame &rArr; eth_send_frame &rArr; arp_cache_find &rArr; arp_send_request &rArr; free_mem
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_system
@@ -1075,7 +1074,7 @@ Global Symbols
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_request
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_reply
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_proc_response
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_TcpNet
 </UL>
@@ -1145,7 +1144,7 @@ Global Symbols
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_error
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
 </UL>
 
 <P><STRONG><a name="[ba]"></a>str_up_case</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, at_lib.o(i.str_up_case))
@@ -1156,11 +1155,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[54]"></a>tcp_check_send</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, at_tcp.o(i.tcp_check_send))
-<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
 </UL>
 
-<P><STRONG><a name="[59]"></a>tcp_close</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, at_tcp.o(i.tcp_close))
+<P><STRONG><a name="[58]"></a>tcp_close</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, at_tcp.o(i.tcp_close))
 <BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = tcp_close &rArr; tcp_send_ctrl &rArr; tcp_send_frame &rArr; ip_send_frame &rArr; eth_send_frame &rArr; arp_cache_find &rArr; arp_send_request &rArr; free_mem
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_transit
@@ -1182,12 +1181,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
 </UL>
 
-<P><STRONG><a name="[56]"></a>tcp_get_buf</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, at_tcp.o(i.tcp_get_buf))
+<P><STRONG><a name="[55]"></a>tcp_get_buf</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, at_tcp.o(i.tcp_get_buf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = tcp_get_buf &rArr; alloc_mem
 </UL>
 <BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_mem
 </UL>
-<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
 </UL>
 
@@ -1197,7 +1196,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
 </UL>
 
-<P><STRONG><a name="[5d]"></a>tcp_get_socket</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, at_tcp.o(i.tcp_get_socket))
+<P><STRONG><a name="[5b]"></a>tcp_get_socket</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, at_tcp.o(i.tcp_get_socket))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tcp_get_socket
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_error
@@ -1211,9 +1210,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_system
 </UL>
 
-<P><STRONG><a name="[55]"></a>tcp_max_dsize</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, at_tcp.o(i.tcp_max_dsize))
-<BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
+<P><STRONG><a name="[60]"></a>tcp_max_dsize</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, at_tcp.o(i.tcp_max_dsize), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
 </UL>
 
 <P><STRONG><a name="[74]"></a>tcp_poll_sockets</STRONG> (Thumb, 526 bytes, Stack size 32 bytes, at_tcp.o(i.tcp_poll_sockets))
@@ -1248,7 +1246,7 @@ Global Symbols
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eth_run_link
 </UL>
 
-<P><STRONG><a name="[58]"></a>tcp_send</STRONG> (Thumb, 264 bytes, Stack size 40 bytes, at_tcp.o(i.tcp_send))
+<P><STRONG><a name="[57]"></a>tcp_send</STRONG> (Thumb, 264 bytes, Stack size 40 bytes, at_tcp.o(i.tcp_send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = tcp_send &rArr; tcp_send_frame &rArr; ip_send_frame &rArr; eth_send_frame &rArr; arp_cache_find &rArr; arp_send_request &rArr; free_mem
 </UL>
 <BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resize_mem
@@ -1258,11 +1256,11 @@ Global Symbols
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free_mem
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;alloc_mem
 </UL>
-<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_datalog
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data
 </UL>
 
-<P><STRONG><a name="[5e]"></a>timer_tick</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, at_system.o(i.timer_tick))
+<P><STRONG><a name="[5c]"></a>timer_tick</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, at_system.o(i.timer_tick))
 <BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1327,10 +1325,10 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
 </UL>
 
-<P><STRONG><a name="[5b]"></a>init</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, http_demo.o(.text))
+<P><STRONG><a name="[59]"></a>init</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, http_demo.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = init &rArr; init_TcpNet &rArr; init_system &rArr; eth_init_link &rArr; init_ethernet &rArr; GLCD_displayStringLn &rArr; GLCD_displayChar &rArr; GLCD_drawChar &rArr; ili9341_set_window &rArr; wr_cmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_TcpNet
@@ -1499,7 +1497,7 @@ Local Symbols
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll_sockets
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 </UL>
 
 <P><STRONG><a name="[c4]"></a>tcp_send_frame</STRONG> (Thumb, 262 bytes, Stack size 32 bytes, at_tcp.o(i.tcp_send_frame))
@@ -1513,7 +1511,7 @@ Local Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_ctrl
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll_sockets
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
 </UL>
 
 <P><STRONG><a name="[c7]"></a>tcp_send_reset</STRONG> (Thumb, 124 bytes, Stack size 16 bytes, at_tcp.o(i.tcp_send_reset))
@@ -1534,7 +1532,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_transit
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll_sockets
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send
 </UL>
 
 <P><STRONG><a name="[bf]"></a>tcp_transit</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, at_tcp.o(i.tcp_transit))
@@ -1545,7 +1543,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_process
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_poll_sockets
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_connect
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_close
 </UL>
 
 <P><STRONG><a name="[ca]"></a>udp_port_in_use</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, at_udp.o(i.udp_port_in_use))
